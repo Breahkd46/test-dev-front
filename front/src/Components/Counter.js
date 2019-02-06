@@ -125,9 +125,9 @@ class Counter extends Component {
                         {/*<form onSubmit={(e) => {this.handleSubmit(e); return false}}>*/}
                             <div className="form-group">
                                 <select className={"form-control list-group champ"} onChange={this.handleChangeSelect} multiple>
-                                    <option className={"list-group-item list-group-item-action"} data-icon="glyphicon-plus" value={"ADDITION"}>ADDITION</option>
+                                    <option className={"list-group-item list-group-item-action"} value={"ADDITION"}>ADDITION</option>
                                     <option className={"list-group-item list-group-item-action"} value={"SOUSTRACTION"}>SOUSTRACTION</option>
-                                    <option className={"list-group-item list-group-item-action"} value={"MULTIPLICATION"}>MULTIPLICATION <img src={"divide-mathematical.png"}/></option>
+                                    <option className={"list-group-item list-group-item-action"} value={"MULTIPLICATION"}>MULTIPLICATION </option>
                                     <option className={"list-group-item list-group-item-action"} value={"DIVISION"}>DIVISION </option>
                                 </select>
                             </div>
