@@ -13,6 +13,7 @@ class History extends Component {
             isLoading: "counter",
             content: []
         }
+        this.handleResetHistory = this.handleResetHistory.bind(this);
     }
 
     componentDidMount() {
@@ -21,7 +22,7 @@ class History extends Component {
                 SERVER_URL + "/history"
             )
             .then(res => {
-                console.log(res)
+                console.log(res);
                 if (res.status === 200) {
                     console.log(res.data);
                     this.setState({
@@ -44,7 +45,7 @@ class History extends Component {
                 SERVER_URL + "/history"
             )
             .then(res => {
-                console.log(res)
+                console.log(res);
                 if (res.status === 200) {
                     console.log(res.data);
                     this.setState({
@@ -55,7 +56,7 @@ class History extends Component {
                 }
             })
             .catch( err => {
-                    console.log(err)
+                    console.log(err);
                 }
             );
     }

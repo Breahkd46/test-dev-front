@@ -10,6 +10,7 @@ import Counter from "./Components/Counter";
 import logo from './logo.svg';
 import History from "./Components/History";
 // import './App.css';
+import './stylesheets/style.css';
 
 class App extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class App extends Component {
         } else {
             return (
                 <Router>
-                    <div>
+                    <div className={"cadre"}>
                         <Navbar bg="dark" variant="dark">
                             <Nav className="mr-auto">
                                 {this.state.status === "counter"?

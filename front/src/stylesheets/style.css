@@ -1,0 +1,42 @@
+.cadre{
+    /*padding: 30px;*/
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    width: 50%;
+    margin: auto;
+}
+
+.champ {
+    width: 70%;
+    margin: auto;
+}
+
+.champAlign {
+    text-align: center;
+}
+
+.buttonValidation {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.nbCounter {
+    /*width: 250px;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-size: 2em;
+    padding: 0% 3%;
+    border-radius: 6px;
+    /*border: 1px solid black ;*/
+    margin: 5% auto;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.champCounter {
+    box-sizing: content-box;
+    text-align: center;
+}

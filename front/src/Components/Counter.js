@@ -113,18 +113,25 @@ class Counter extends Component {
                         {/*</Button>*/}
                     {/*</Form>*/}
                 {/*</div>*/}
+
+                    {/*<img src={"minus-sign-in-filled-circle.png"}/>*/}
+                    {/*<img src={"add-button-inside-black-circle.png"}/>*/}
+                    {/*<img src={"cancel-button.png"}/>*/}
+
                     <div>
-                        <p>{this.state.counter}</p>
+                        <div className={"champCounter"}>
+                        <span className={"nbCounter"}>{this.state.counter}</span>
+                        </div>
                         {/*<form onSubmit={(e) => {this.handleSubmit(e); return false}}>*/}
                             <div className="form-group">
-                                <select className={"form-control list-group"} onChange={this.handleChangeSelect} multiple>
-                                    <option className={"list-group-item list-group-item-action"} value={"ADDITION"}>ADDITION<img src={"add-button-inside-black-circle.png"}/></option>
-                                    <option className={"list-group-item list-group-item-action"} value={"SOUSTRACTION"}>SOUSTRACTION<img src={"minus-sign-in-filled-circle.png"}/></option>
-                                    <option className={"list-group-item list-group-item-action"} value={"MULTIPLICATION"}>MULTIPLICATION <img src={"cancel-button.png"}/></option>
-                                    <option className={"list-group-item list-group-item-action"} value={"DIVISION"}>DIVISION<img src={"divide-mathematical.png"}/></option>
+                                <select className={"form-control list-group champ"} onChange={this.handleChangeSelect} multiple>
+                                    <option className={"list-group-item list-group-item-action"} data-icon="glyphicon-plus" value={"ADDITION"}>ADDITION</option>
+                                    <option className={"list-group-item list-group-item-action"} value={"SOUSTRACTION"}>SOUSTRACTION</option>
+                                    <option className={"list-group-item list-group-item-action"} value={"MULTIPLICATION"}>MULTIPLICATION <img src={"divide-mathematical.png"}/></option>
+                                    <option className={"list-group-item list-group-item-action"} value={"DIVISION"}>DIVISION </option>
                                 </select>
                             </div>
-                            <div className={"form-group"}>
+                            <div className={"form-group champ champAlign"}>
                                 <label>
                                     <input className={"form-control"}
                                         type="text"
@@ -134,8 +141,8 @@ class Counter extends Component {
                                     />
                                 </label>
                             </div>
-                            <div>
-                                <input className={"btn btn-primary"} type="button" onClick={this.handleSubmit} value="Valider"/>
+                            <div className={"champAlign"}>
+                                <input className={"btn btn-primary buttonValidation"} type="button" onClick={this.handleSubmit} value="Valider"/>
                             </div>
                         {/*</form>*/}
                     </div>
